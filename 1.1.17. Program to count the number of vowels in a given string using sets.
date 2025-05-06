@@ -1,0 +1,14 @@
+def vowel_count(str):
+	count = 0
+	vowel = set("aeiouAEIOU")
+	for char in str:
+		if char in vowel:
+			count+=1
+	print(count)
+'''s=input()
+for char in s:
+	if char in vowel:
+		count += 1  # Increment count if character is a vowel
+		print(count)'''
+str = input()
+vowel_count(str)
