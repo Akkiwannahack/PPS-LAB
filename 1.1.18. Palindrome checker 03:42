@@ -1,0 +1,11 @@
+# Type Content here...
+def is_palindrome(s):
+    if s == s[::-1]:  # Check if string is equal to its reverse
+        print("palindrome")
+    else:
+        print("not a palindrome")
+
+# Input from user
+s = input("")
+is_palindrome(s)
+
