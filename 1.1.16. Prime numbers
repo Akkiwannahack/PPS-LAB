@@ -1,0 +1,19 @@
+# Function to check if a number is prime
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):  # Check divisibility up to sqrt(n)
+        if n % i == 0:
+            return False
+    return True
+
+# Function to generate prime numbers up to a given limit
+def prime_numbers(limit):
+    for num in range(2, limit + 1):
+        if is_prime(num):
+            print(num)
+
+# Input from user
+upper_limit = int(input("Enter upper limit: "))
+prime_numbers(upper_limit)
+
